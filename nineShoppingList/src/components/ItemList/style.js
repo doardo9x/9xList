@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
         itemList:{
             padding: 15,
-            elevation: 12,
+
             borderRadius: 7,
             borderWidth: 2,
             borderColor: 'white',
@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
             flexDirection: 'row',
             justifyContent: 'space-between',
             alignContent: 'center',
-            backgroundColor: '#72686'
+            backgroundColor: '#7268639c'
 
         },
         itemToBuy:{
