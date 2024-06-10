@@ -6,14 +6,17 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
-        backgroundColor: '#000000c0',
+        backgroundColor: '#9D8E87',
         borderBottomLeftRadius: 30,
         borderBottomRightRadius: 30,
     },
     title: {
-        color: '#fff',
+        color: '#37245D',
         fontSize: 24,
         fontWeight: 'bold',
+    },
+    icon:{
+        color: '#37245D'
     },
     footer: {
         position: 'absolute',
@@ -22,17 +25,15 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         paddingHorizontal: 20,
-        backgroundColor: '#000000c0',
+        backgroundColor: '#645853',
         borderTopLeftRadius: 30,
-        borderBottomRightRadius: 30,
+  
     },
     inputContainer: {
-        backgroundColor:'#000',
-        elevation: 40,
+        backgroundColor:'#645853',
         flex: 1,
         height: 50,
         marginVertical: 20,
-        borderRadius: 30,
         paddingHorizontal: 20,
         justifyContent: 'center',
     },
@@ -43,6 +44,9 @@ export const styles = StyleSheet.create({
         width: 50,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: "#000"
+        backgroundColor: "#37245D"
+    },  
+    List:{
+        backgroundColor: 'green'
     }
 })

@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
             flexDirection: 'row',
             justifyContent: 'space-between',
             alignContent: 'center',
-            backgroundColor: '#000000c0'
+            backgroundColor: '#72686'
 
         },
         itemToBuy:{

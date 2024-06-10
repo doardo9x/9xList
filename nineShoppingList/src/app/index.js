@@ -8,13 +8,13 @@ export default function Welcome() {
     <View style={styles.container}>
       <View style={styles.imageContainer}>
         <Image 
-          source={require("../assets/avatar.jpg")}
+          source={require("../assets/NineXTasks.jpg")}
           style={styles.image}
         />
       </View>
       <View style={styles.content}>
-        <Text style={styles.title}>9x-List </Text>
-        <Text style={styles.text}>Monte sua lista de compras e não esqueça mais o que precisa comprar ao sair de casa!</Text>
+        <Text style={styles.title}>NineXTasks</Text>
+        <Text style={styles.text}>Transformando suas tarefas diárias em conquistas, um passo de cada vez!</Text>
         <Link style={styles.button} href={"/home"}>
           <Text style={styles.buttonText}>Acessar</Text>
         </Link>
@@ -27,7 +27,7 @@ export default function Welcome() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000000',
+    backgroundColor: '#D1C3BC',
   },
   imageContainer: {
     flex: 2,
@@ -52,15 +52,17 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginTop: 28,
     marginBottom: 20,
-    textAlign: 'center'
+    textAlign: 'center',
+    color: '#37245D'
   },
   text:{
+    textAlign: 'center',
     color:'gray',
     fontSize: 16,
   }, 
   button:{
     position: 'absolute',
-    backgroundColor: '#000',
+    backgroundColor: '#37245D',
     borderRadius: 50,
     bottom: '15%',
     paddingVertical: 15,

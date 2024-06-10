@@ -48,7 +48,7 @@ export default function Home() {
   const addItem = () => {
     // console.log(textInput);
     if (textInput == ''){
-      Alert.alert('Ocorreu um problema :(  Por favor, informe o nome do produto!')
+      Alert.alert('Ocorreu um problema :(  Por favor, informe o nome da tarefa!')
     } else {
       const newItem = {
         id: Math.random(),
@@ -81,7 +81,7 @@ export default function Home() {
   }
 
   const removeItem = itemId => {
-    Alert.alert('Excluir produto?', 'Confirma a exclusão deste produto?',
+    Alert.alert('Excluir Tarefa?', 'Confirma a exclusão da tarefa?',
     [
       { 
         text: 'Sim', onPress: () => {
@@ -97,7 +97,7 @@ export default function Home() {
   }
 
   const removeAll = () => {
-    Alert.alert('Limpar Lista?', 'Voce deseja excluir todos os produtos da lista?', 
+    Alert.alert('Limpar Tarefas?', 'Voce deseja excluir todas as tarefas?', 
     [{
       text: 'Sim',
       onPress: () => {setItems([])}
@@ -111,16 +111,16 @@ export default function Home() {
   return (
     <SafeAreaView style={{flex: 1}}>
       <ImageBackground
-        source={require('../../assets/background.jpg')}
-        resizeMode='repeat'
-        style={{flex: 1, justifyContent: 'flex-start'}}
+        source={require('../../assets/Background.png')}
+        style={{flex:1} }
       >
       <View style={styles.header}>
-        <Text style={styles.title}>Lista de Produtos</Text>
-        <Ionicons name='trash' size={32} color='#fff' onPress={removeAll}/>
+          <View></View>
+          <Text style={styles.title}>Tasks</Text>
+          <Ionicons style={styles.icon} name='trash' size={32} color='#fff' onPress={removeAll}/>
       </View>
 
-      {/* Lista de produtos */}
+      {/* Lista de tarefas */}
       <FlatList 
         contentContainerStyle={{padding: 20, paddingBottom: 100, color:"#fff"}}
         data={items}
@@ -140,13 +140,13 @@ export default function Home() {
             color= '#fff'
             fontSize={18}
             placeholderTextColor='#aeaeae'
-            placeholder='Digite o nome do Item...'
+            placeholder='Digite sua Tarefa...'
             value={textInput}
             onChangeText={(text) => setTextInput(text)}
           />
         </View>
         <TouchableOpacity style = {styles.iconContainer} onPress={addItem}>
-          <Ionicons name='add' size={36} color='#fff'/>
+          <Ionicons name='add' size={36} color='#fff' backgroundColor='#37245D'/>
         </TouchableOpacity>
       </View>
 
